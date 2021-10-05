@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <header>
+    <meta charset="utf-8" />
+    <title>Calender</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+
+  <body>
+    <div class="calendar_container">
+      <div class = 'header_container'>
+        <button class='beforeBtn'><</button>
+        <div class = "calendar_year_month"></div>
+        <button class='afterBtn'>></button>
+      </div>
+
+      <div class="calendar_weeks"></div>
+      <div class ="calendar_body">
+
+      </div>
+
+      <div class ="modal_container">
+        <div class="modal_content">
+         <div class='modal_Date'></div>
+         <input class='modal_input' placeholder="Event Title"></input>
+         <div class='btn_container'>
+          <button class = 'confirm_btn'>확인</button>
+          <button class = 'cancle_btn'>취소</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="header.js"></script>
+    <script src="setday.js"></script>
+    <script src="buttons.js"></script>
+  </body>
+</html>
