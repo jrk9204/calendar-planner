@@ -51,6 +51,11 @@ const setDays = () => {
       displayDays.appendChild(prevDate);
     } else if (firstDay < i && i <= daysInMonth + firstDay) {
       let date = i - firstDay;
+      let findWeekend = new Date(year, month, date).getDay();
+      if (findWeekend === 0) {
+        actuallDate.classList.add("actuallWeekDay");
+      }
+
       actuallDate.textContent = date;
       actuallDate.addEventListener("click", () => {
         handleDate(date);

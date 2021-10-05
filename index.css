@@ -67,6 +67,10 @@
   display: none;
 }
 
+.actuallWeekDay {
+  color: red;
+}
+
 .prevDate,
 .restDate {
   color: gray;
