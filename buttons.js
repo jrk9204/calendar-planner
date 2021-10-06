@@ -19,7 +19,13 @@ function buttonsEvents() {
 
   function handleModalBtn(event) {
     const buttonName = event.target.textContent;
-    let originData = JSON.parse(localStorage.getItem("MyEvents"));
+    let hasData = JSON.parse(localStorage.getItem("MyEvents")); 
+    let originData = [];
+
+    if(hasData){
+      originData.push(...hasData);
+    }
+
 
     if (buttonName === "확인" && modal_input.value) {
       originData.push({
